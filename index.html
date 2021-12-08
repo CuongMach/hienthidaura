@@ -12,11 +12,13 @@
 <!--    }-->
 <!--</script>-->
 <!--//document.write sau khi click sẽ ẩn click và hiện chữ-->
+<div id="messageDiv"></div>
 <button type="button" onclick="showMessage();">Click Me!</button>
 <script>
     function showMessage(){
-        alert('Xin chào!');
+        document.getElementById('messageDiv').innerHTML = 'Xin chào!';
     }
 </script>
+//sau khi click sẽ hiện xin chào ở ngay bên trên của click
 </body>
 </html>
